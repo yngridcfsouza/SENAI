@@ -205,12 +205,11 @@ header {
     background-color: orange;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     flex-direction: row;
-    
     height: 400px; 
     width: 100%;
-    padding: 50px;
+    padding: 100px;
 }
 
 .rodape h2 {
@@ -224,7 +223,7 @@ header {
     flex-direction: column;
     color: black;
     font-family: 'Roboto Slab', serif;
-    font-size: 20px;
+    font-size: 15px;
     text-decoration: none;
 }
 
@@ -235,7 +234,7 @@ header {
     flex-direction: column;
     color: black;
     font-family: 'Roboto Slab', serif;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .coluna3 {
@@ -245,7 +244,7 @@ header {
     flex-direction: column;
     color: black;
     font-family: 'Roboto Slab', serif;
-    font-size: 20px;
+    font-size: 15px;
     text-decoration: none;
 }
 
