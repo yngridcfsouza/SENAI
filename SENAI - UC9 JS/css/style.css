@@ -1,0 +1,294 @@
+
+/* RESET CSS */
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+
+header {
+    background-color: white;
+    height: 80px;
+}
+
+.container-grid {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+.icone-menu {
+
+height: 40px;
+
+}
+
+#barras {
+
+    display: none;
+}
+
+.banner {
+    background-image: url(../img/Banner.jpg);
+    height: 450px;
+    background-position: center;
+    background-color: black;
+    background-size: cover;
+}
+
+.conteudo-banner {
+    height: 450px;
+    width: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+
+}
+
+.posicionamento-banner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+.conteudo-banner h1 {
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 70px;
+    text-align: center;
+}
+
+.conteudo-banner p {
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.conteudo-banner a {
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: black;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.logos {
+    display: flex;
+    width: 100%;
+    background-color: black;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ofertas {
+    background-color: black;
+    width: 100%;
+}
+
+.ofertas h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    height: 150px;
+    color: black;
+    background-color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+    }
+
+.ofertas div {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.linha1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    height: 400px; 
+    padding: 30px;
+} 
+
+.ofertas-texto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+}
+
+.ofertas-texto h3 {
+    color: black;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.ofertas-texto p {
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.ofertas-texto a {
+    color: black;
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    background-color: brown;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.info {
+    height: 300px;
+    width: 100%;
+}
+
+.info h2 {
+    color: black;
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.info p {
+    color: black;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    text-align: left
+}
+
+.posicao-info {
+    background-color: orange;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+    height: 200px; 
+    padding: 100px;
+}
+
+.info img {
+    height: 200px;
+}
+
+.rodape {
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 400px; 
+    width: 100%;
+    padding: 100px;
+}
+
+.rodape h2 {
+    padding: 20px;
+}
+
+.coluna1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+}
+
+.coluna2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+}
+
+.coluna3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.posicao-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 1100px) {
+
+    #barras {
+        display: flex;
+    }    
+
+    .menu {
+
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    header {
+        background-color: rgb(1, 1, 1);
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+}
+
+*/
