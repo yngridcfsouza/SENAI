@@ -1,6 +1,46 @@
 
-// alert("o javascript do arquivo externo está sendo executado");
+$(document).ready(function () {
 
+    let slideAtual = 1
+    let listaSlides = ["banner-principal", "banner-cs", "banner-lol"]
+
+    setInterval(mudarSlide, 2000);
+
+    function mudarSlide () {
+        // Remover o slide atual
+        if (slideAtual > 0) {
+
+            $("#carrossel").removeClass(listaSlides[slideAtual - 1])
+        } else {
+            $("#carrossel").removeClass(slideAtual[(listaSlides.length - 1)])
+        }
+
+        // Exibir o slide atual
+        $("#carrossel").addClass(listaSlides[slideAtual])
+
+        // Indicar qual o slide atual
+        console,console.log("Slide atual é:", slideAtual)
+
+        slideAtual++
+
+        if (slideAtual > 2) {
+            slideAtual = 0;
+        }
+
+    }
+
+
+    $("#barras").click(function() {
+        
+        if ($("#menu").hasClass("menu-ativo")) {
+            $("#menu").removeClass("menu-ativo")
+        } else {
+            $("#menu").addClass("menu-ativo")
+        }
+
+        // Toggle
+    })
+})
 
 function cadastrarNewsLetter() {
 

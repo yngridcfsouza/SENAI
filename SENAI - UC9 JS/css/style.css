@@ -30,6 +30,10 @@ header {
     width: 600px;
 }
 
+.menu-ativo {
+    display: flex;
+}
+
 .menu a {
     color: black;
     text-decoration: none;
@@ -49,11 +53,23 @@ height: 40px;
 }
 
 .banner {
-    background-image: url(../img/Banner.jpg);
+    
     height: 450px;
     background-position: center;
     background-color: black;
     background-size: cover;
+}
+
+.banner-principal {
+    background-image: url(../img/Banner.jpg);
+}
+
+.banner-cs {
+    background-image: url(../img/bannercs.jpeg);
+}
+
+.banner-lol {
+    background-image: url(../img/bannerlol.jpeg);
 }
 
 .conteudo-banner {
