@@ -93,7 +93,7 @@ height: 40px;
 .conteudo-banner h1 {
     color: white;
     font-family: 'Roboto Slab', serif;
-    font-size: 70px;
+    font-size: 50px;
     text-align: center;
 }
 
@@ -282,15 +282,37 @@ height: 40px;
     align-items: center;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1000px) {
 
     #barras {
-        display: flex;
+        display: inline-block;
+        
     }    
+
+    #carrossel {
+        display: inline-block;
+    }
 
     .menu {
 
         display: none;
+
+        position: absolute;
+        top: 80px;
+        right: 0px;
+
+        height: 400px;
+        width: 100vw;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: orange;
+
+    }
+
+    .menu-ativo {
+        display: flex;
     }
 }
 
@@ -298,7 +320,7 @@ height: 40px;
 @media screen and (max-width: 768px) {
     
     header {
-        background-color: rgb(1, 1, 1);
+        background-color: orange;
     }
 
     .logo {

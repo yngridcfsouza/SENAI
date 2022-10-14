@@ -4,12 +4,11 @@ $(document).ready(function () {
     let slideAtual = 1
     let listaSlides = ["banner-principal", "banner-cs", "banner-lol"]
 
-    setInterval(mudarSlide, 2000);
+    setInterval(mudarSlide, 2000)
 
     function mudarSlide () {
         // Remover o slide atual
         if (slideAtual > 0) {
-
             $("#carrossel").removeClass(listaSlides[slideAtual - 1])
         } else {
             $("#carrossel").removeClass(slideAtual[(listaSlides.length - 1)])
@@ -19,27 +18,26 @@ $(document).ready(function () {
         $("#carrossel").addClass(listaSlides[slideAtual])
 
         // Indicar qual o slide atual
-        console,console.log("Slide atual é:", slideAtual)
+        console.log("Slide atual é:", slideAtual)
 
         slideAtual++
 
-        if (slideAtual > 2) {
-            slideAtual = 0;
+        if (slideAtual > listaSlides.length - 1) {
+            slideAtual = 0
         }
 
     }
 
 
     $("#barras").click(function() {
-        
+
         if ($("#menu").hasClass("menu-ativo")) {
             $("#menu").removeClass("menu-ativo")
         } else {
             $("#menu").addClass("menu-ativo")
         }
-
-        // Toggle
     })
+
 })
 
 function cadastrarNewsLetter() {
@@ -54,9 +52,10 @@ function mostrarMenu() {
 
     if (getComputedStyle(menu).display == 'none') {
 
-        menu.style.display = 'flex';
+        menu.style.display = 'flex'
+
     } else {
 
-        menu.style.display = 'none';
+        menu.style.display = 'none'
     }
 }
